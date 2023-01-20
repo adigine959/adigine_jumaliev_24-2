@@ -25,8 +25,8 @@
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h6 class="card-title">{{ product.title }}</h6>
-                    <h5 class="card-subtitle">{{ product.descriptions }}</h5>
-                    <h6>{{ product.created_date }}</h6>
+                    <h5 class="card-subtitle">{{ product.created_date }}</h5>
+                    <a href="/products/{{ product.id }}/" class="card-linck">More</a>
                 </div>
             </div>
         {% endfor %}

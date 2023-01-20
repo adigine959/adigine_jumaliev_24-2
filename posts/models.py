@@ -8,3 +8,9 @@ class Product(models.Model):
     price = models.FloatField()
     descriptions = models.TextField()
     created_date = models.DateField(auto_now=True)
+
+
+class Review(models.Model):
+    text = models.TextField()
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product')
+
